@@ -1,0 +1,278 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    outline: none;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #e5e5e5;
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(112, 176, 206);
+    padding: 30px;
+    color: white;
+}
+
+.header h1 a {
+    text-decoration: none;
+    color: white;
+}
+
+.left {
+    flex: 1; 
+}
+
+.right {
+    display: flex;
+    gap: 10px; 
+}
+
+button.botao {
+    border: none;
+    background-color: white;
+    color: rgb(43, 95, 120);
+    font-size: 16px;
+    padding: 9px 22px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.botoes-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+}
+
+.container .column {
+    width: 280px;
+    height: 600px;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.container .column .head {
+    background-color: rgb(112, 176, 206);
+    color: white;
+    padding: 15px 15px;
+    text-align: center;
+}
+
+.container .column .body {
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.container .column .body .card_list {
+    display: flex;
+    flex-direction: column;
+}
+
+.container .column .body .add_btn {
+    background: none;
+    border: 1px solid;
+    border-radius: 10px;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    cursor: pointer;
+    color: rgb(43, 95, 120);
+    margin-bottom: 20px;
+}
+
+.container .column .body .card {
+    background-color: #e5e5e5;
+    border-radius: 7px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.container .column .body .card p,
+.container .column .body .card span {
+    margin-bottom: 8px;
+}
+
+.container .column .body .card .botao-card,
+#modal .box .form .botao-card {
+    border: none;
+    background-color: #70b0ce;
+    color: white;
+    font-size: 14px;
+    padding: 8px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    margin: 0 2px;
+}
+
+#modal {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+#modal .box {
+    background-color: white;
+    width: 450px; 
+    max-height: 90%; 
+    border-radius: 7px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column; 
+}
+
+#modal .box .head {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 28px;
+    border: 1px solid #ddd;
+}
+
+#modal .box .head span {
+    font-size: 18px;
+    font-weight: 780;
+    color: #333;
+}
+
+#modal .box .head button {
+    border: none;
+    background: none;
+    font-size: 22px;
+    font-weight: 780;
+    cursor: pointer;
+    color: #333;
+}
+
+#modal .box .form {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+#modal .box .form label {
+    display: block;
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+#modal .box .form textarea,
+#modal .box .form select,
+#modal .box .form input {
+    width: 100%;
+    border-radius: 7px;
+    font-size: 14px;
+    border: 1px solid #999;
+    color: #333;
+}
+
+#modal .box .form .form-group {
+    margin-bottom: 15px;
+}
+
+#modal .box .form textarea {
+    padding: 10px 15px;
+}
+
+#modal .box .form select {
+    padding: 10px;
+}
+
+#modal .box .form input {
+    padding: 10px;
+}
+
+#modal .box .form .button-container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#modal .box .form .button-container .botao-card {
+    border: none;
+    background-color: #70b0ce;
+    color: white;
+    font-size: 14px;
+    padding: 8px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    margin: 0 2px;
+}
+
+.card.highlight {
+    border: 2px solid red;
+    position: relative;
+}
+
+.card.highlight::after {
+    content: "ATIVIDADE IRÁ VENCER EM BREVE";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: red;
+    color: white;
+    font-size: 12px;
+    text-align: center;
+    padding: 5px 0;
+    opacity: 0;
+    transition: opacity 0.3s;
+    z-index: 1;
+}
+
+.card.highlight:hover::after {
+    opacity: 1;
+}
+
+.container .column-lixeira {
+    width: 70%; 
+    height: auto; 
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.container .column-lixeira .body .card_list .card {
+    background-color: #e5e5e5;
+    border-radius: 7px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+    width: 100%; 
+}
+
+.container .column-lixeira .body {
+    padding: 20px;
+    overflow-y: auto;
+}
