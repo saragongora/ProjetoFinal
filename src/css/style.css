@@ -4,7 +4,7 @@ body {
     font-family: 'Roboto', sans-serif;
     outline: none;
     box-sizing: border-box;
-    background-color: #e5e5e5;
+    background-color: #F5E2CE;
 }
 
 .main-container {
@@ -21,20 +21,20 @@ body {
 .sidebar {
     flex: 1;
     padding: 20px;
-    background-color: #f9f9f9;
+    background-color: #F5E2CE;
 }
 
 h1 {
     margin-left: 40px;
     font-size: 32px;
     text-align: left;
-    color: rgb(43, 95, 120);
+    color: #8A271B;
     margin-bottom: 15px; 
 }
 
 p, .btn-access {
     text-align: justify;
-    color: rgb(43, 95, 120);
+    color: #B53324;
     margin-left: 40px;
 }
 
@@ -46,21 +46,21 @@ p, .btn-access {
 }
 
 .image {
-    max-width: 80%; 
+    max-width: 60%; 
 }
 
 .btn-access {
     display: inline-block;
     padding: 10px 20px;
-    background-color: rgb(112, 176, 206);
-    color: white;
+    background-color: #B53324;
+    color: #F5E2CE;
     text-decoration: none;
     border-radius: 5px;
     transition: background-color 0.3s ease;
 }
 
 .btn-access:hover {
-    background-color: e5e5e5;
+    background-color: #8A271B;
 }
 
 .header {
@@ -68,14 +68,14 @@ p, .btn-access {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgb(112, 176, 206);
-    padding: 15px 30px; 
-    color: white;
+    background-color: #B53324;
+    
+    color: #F5E2CE;
 }
 
 
 .header h1 a {
     text-decoration: none;
-    color: white;
+    color: #F5E2CE;
 }
 
