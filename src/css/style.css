@@ -5,23 +5,62 @@ body {
     outline: none;
     box-sizing: border-box;
     background-color: #F5E2CE;
+    
+        font-family: 'Staatliches', sans-serif;
+    
+    
+}
+
+.staatliches-regular {
+    font-family: "Staatliches", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+
+.header a{
+    margin-left: 60px;
+    margin-top: 10px;
+    margin-bottom: 5px;
 }
 
 .main-container {
     display: flex;
     align-items: center;
+    justify-content: center;
     padding: 20px;
+    gap: 78px; /* Mantém espaçamento ajustado */
+    max-width: 1100px; /* Define um limite para o container */
+    width: 100%; /* Mantém o container ocupando toda a largura necessária */
+    margin: 0 auto; /* Centraliza o container na tela */
 }
 
-.content {
-    flex: 1;
-    padding-right: 20px;
+.content, .image-container {
+    flex: 0.5; /* Faz com que os elementos ocupem o mesmo espaço */
+    max-width: 500px; /* Mantém ambos os elementos com largura controlada */
 }
 
-.sidebar {
-    flex: 1;
-    padding: 20px;
-    background-color: #F5E2CE;
+.image {
+    max-width: 70%;
+}
+
+h1, p, .btn-access {
+    text-align: left;
+    margin-left: 0; /* Remove deslocamento lateral que poderia estar desalinhando */
+}
+
+
+
+.btn-access {
+    display: inline-block;
+    margin-left: 0; /* Removendo margem lateral extra */
+}
+
+
+p, .btn-access {
+    text-align: justify;
+    color: #B53324;
+    margin-left: 40px;
 }
 
 h1 {
@@ -30,23 +69,6 @@ h1 {
     text-align: left;
     color: #8A271B;
     margin-bottom: 15px; 
-}
-
-p, .btn-access {
-    text-align: justify;
-    color: #B53324;
-    margin-left: 40px;
-}
-
-.image-container {
-    flex: 1;
-    text-align: right;
-    margin-top: 40px;;
-    margin-right: 40px;
-}
-
-.image {
-    max-width: 60%; 
 }
 
 .btn-access {
@@ -72,7 +94,6 @@ p, .btn-access {
     
     color: #F5E2CE;
 }
-
 
 .header h1 a {
     text-decoration: none;
